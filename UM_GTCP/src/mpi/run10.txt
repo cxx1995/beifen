@@ -1,0 +1,4 @@
+NOT use customized MPI mapping on BGQ
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+multiProcessorCount=56
+‡(­û

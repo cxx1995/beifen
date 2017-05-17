@@ -1,0 +1,24 @@
+#!/bin/bash
+#PBS -A FUS100
+##PBS -A CSC103
+#PBS -N GTCP_CPU
+#PBS -l nodes=64
+##PBS -q debug
+#PBS -l walltime=00:10:00
+#PBS -l gres=atlas1
+#PBS -e A$PPC.$PBS_JOBID.err
+#PBS -o A$PPC.$PBS_JOBID.out
+
+cd $MEMBERWORK/fus100/GTCP_GPU_Mar14/A$PPC
+# Same as the modules you load during the compilation                                           
+source $MODULESHOME/init/bash
+module unload cudatoolkit PrgEnv-intel PrgEnv-pgi PrgEnv-cray PrgEnv-gnu
+module load PrgEnv-cray
+
+# 1 proc per GPU use OMP threads for the number of cores                                        
+export OMP_NUM_THREADS=16
+
+# 1 Toroidal per node
+aprun -cc none -n 64 -N 1 -d 16 ./bench_gtc_titan_opt_cpu_cray+apa A.txt $PPC 64
+
+

@@ -1,0 +1,99 @@
+-----------------------------------
+C+MPI/OpenMP GTC benchmark
+Based on the GTC-NERSC6 Fortran
+MPI/OpenMP benchmark
+----------------------------------
+
+Kamesh Madduri
+madduri@cse.psu.edu
+Last updated: August 8, 2012
+----------------------------------
+
+Files
+-----
+
+  The current MPI/OpenMP code is in the src/mpi folder.
+  bench_gtc.h        : common header file for all the kernels.
+  bench_gtc_opt.h    : set optimizations and test parameters.
+  bench_gtc_port.h   : include header files for SSE, aligned malloc.
+  *.c                : the source files, following the same naming
+                       convention as GTC-Simple.
+
+  The reference serial and the Pthreads versions of the charge ans push 
+  kernels will be moved to the "serial" and "pthreads" directories 
+  under src. Please contact Kamesh Madduri (madduri@cse.psu.edu)
+
+  The ARCH directory has Makefiles.
+
+  The timing directory has portable timers (not being used in the MPI code).
+
+Building the code
+-----------------
+
+  Edit one of the files in ARCH: see, for example, Makefile.hopper-opt or 
+  Makefile.generic (serial).
+
+  Build the code with
+$ make ARCH=hopper-opt
+  (or the appropriate Makefile suffix)
+  This compiles the source files in the src/mpi directory.
+   
+  One executable will be built in src/mpi.
+
+  Set USE_MPI to 0 (-DUSE_MPI=0) to build the serial code.
+
+  Just compile without OpenMP flags to disable it.
+
+Running the code
+----------------
+
+  Four config files A.txt, B.txt, C.txt, and D.txt are included in src/mpi/input. 
+  The # of particles per cell and the number of toroidal domains are
+  set with command-line arguments.
+
+e.g., 
+$ mpiexec -n 4 bench_gtc_carver_opt B.txt 20 4
+
+  The # of particle domains is calculated based on the values of
+  numberpe and ntoroidal. 
+  npartdom = numberpe / ntoroidal
+
+Important
+---------
+
+  Before running, make sure that the value of ASSUME_MZETA_EQUALS1 in the 
+  file gtc_bench_opt.h is set correctly. This may be set to 1 when mzeta = 1
+  (or mzetamax = ntoroidal), but should be 0 in all other cases.
+
+  AUX_STORE1 and AUX_STORE2 in gtc_bench_opt.h should be set to 0 only for
+  benchmarking the impact of stores.
+  
+Assumptions
+-----------
+
+  Some parameters are hard-coded in the current version, and code for 
+  alternate cases has not been implemented yet. Hence be careful when
+  modifying these values.
+  
+  nonlinear = 1.0  /* nonlinear = 0.0 requires some FFTs etc. */
+  paranl    = 1.0  
+  irun      = 0    /* always start sim from time step 0, no restart */
+  nhybrid   = 0    /* adiabatic, not kinetic, electrons */ 
+  mflux     = 5
+  flow0     = flow1 = flow2 = 0
+  nbound    = 4
+  track_particles = 0
+  iload     = 0
+  ismooth   = 0    /* simplifies smooth */
+ 
+Other things to note
+--------------------
+
+  The particle and field data structure variable names match 
+  (in most cases) the Fortran names. However, 
+  zion(1,:) is z0[], zion(2,:) is z1, ... , zion(6,:) is z5
+  zion0(0,:) is z00[], zion0(1,:) is z01, ..., zion0(6,:) is z05
+
+  All Fortran multidimensional arrays have been flattened to 1D, 
+  0-indexed arrays in the C code.
+

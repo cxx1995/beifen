@@ -1,0 +1,30 @@
+# Define the following to 1 to enable build
+BENCH_GTC_MPI = 1
+BENCH_CHARGEI_PTHREADS = 0
+BENCH_PUSHI_PTHREADS = 0
+BENCH_SERIAL = 0
+CUDA_HOME=$(CRAY_CUDATOOLKIT_DIR)
+NVCC_HOME = $(CUDA_HOME)
+
+CC = cc
+MPICC = cc
+NVCC = nvcc
+
+NVCC_FLAGS = -gencode=arch=compute_35,code=\"sm_35,compute_35\" -gencode=arch=compute_35,code=\"sm_35,compute_35\" -m64 -Xptxas -dlcm=cg --compiler-options  -fno-strict-aliasing --ptxas-options=-v -I. -DUNIX -DGPU_ACCEL=1 -DUSE_MPI=1 -I./ -I$(SDK_HOME)/C/common/inc -I$(NVCC_HOME)/include 
+#-I/opt/sw/xk6/ompi/1.7.1/sles11.1_intel12.1.3.293/include
+#-Xptxas -dlcm=cg disable L1 caching
+
+NVCC_LINK_FLAGS = -fPIC -L$(NVCC_HOME)/lib64 -lcudart -lstdc++
+
+CFLAGS = -DUSE_MPI=1 -DGPU_ACCEL=1 -h c99 -h gnu
+CFLAGSOMP =
+COPTFLAGS = -O3
+CDEPFLAGS =  
+CLDFLAGS = $(NVCC_LINK_FLAGS)
+MPIDIR = 
+#CFLAGS  +=  -I$(CUDA_HOME)/include/
+ 
+EXEEXT = _titan_opt_cray
+AR = ar
+ARCRFLAGS = cr
+RANLIB = ranlib

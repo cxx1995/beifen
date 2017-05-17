@@ -1,0 +1,310 @@
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 51342500, mi_total: 51342500, mgrid: 513785, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 53 0 1.000000 0.000000 513785 19335432
+^C
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/C.txt 180 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 92416500, mi_total: 92416500, mgrid: 513785, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 53 0 1.000000 0.000000 513785 19335432
+100 time steps
+Total time:   1192.274896 s
+Charge        130.952857 s (10.9834)
+Push          492.480124 s (41.3059)
+Shift_t       496.330715 s (41.6289)
+Shift_r        0.000177 s (0.0000)
+Sorting        0.000157 s (0.0000)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       56.250750 s (4.7179)
+Field          6.354190 s (0.5329)
+Smooth         9.904909 s (0.8308)
+Restart        0.000012 s (0.0000)
+Moments        0.000011 s (0.0000)
+Setup         243.043776 s
+Poisson Init   3.115804 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 0.000000 charge_t_comm3= 0.003157
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 0.000000 charge_t_comm3_g= 0.003157
+grid_t_comm1= 1.091517 grid_t_comm2= 0.000353
+grid_t_comm1_g= 1.091517 grid_t_comm2_g= 0.000353
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(­
+GPU PCIe time summary:
+Charge			 0.443721 s
+Push			 1.190696 s
+Shift			 0.000000 s
+
+Execution time summary on GPU device:
+Charge			126.587973 s
+Push			491.269993 s
+Shift			 0.000000 s
+Particle sort	61.139059 s
+Particle bin	435.165757 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/C.txt 180 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 92416500, mi_total: 92416500, mgrid: 513785, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 53 0 1.000000 0.000000 513785 19335432
+100 time steps
+Total time:   1130.197548 s
+Charge        125.743273 s (11.1258)
+Push          464.813372 s (41.1267)
+Shift_t       469.000736 s (41.4972)
+Shift_r        0.000056 s (0.0000)
+Sorting        0.000030 s (0.0000)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       54.752092 s (4.8445)
+Field          6.260811 s (0.5540)
+Smooth         9.626479 s (0.8518)
+Restart        0.000011 s (0.0000)
+Moments        0.000014 s (0.0000)
+Setup         242.978606 s
+Poisson Init   3.114840 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 0.000000 charge_t_comm3= 0.003157
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 0.000000 charge_t_comm3_g= 0.003157
+grid_t_comm1= 1.078436 grid_t_comm2= 0.000323
+grid_t_comm1_g= 1.078436 grid_t_comm2_g= 0.000323
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(­
+GPU PCIe time summary:
+Charge			 0.409409 s
+Push			 1.092509 s
+Shift			 0.000000 s
+
+Execution time summary on GPU device:
+Charge			122.384149 s
+Push			463.707343 s
+Shift			 0.000000 s
+Particle sort	57.692649 s
+Particle bin	411.297627 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/C.txt 180 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 92416500, mi_total: 92416500, mgrid: 513785, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+^C
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/D.txt 180 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 369152460, mi_total: 369152460, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+bench_gtc-minsky-nvcc: setup.c:1213: int setup(gtc_bench_data_t *): Assertion `wpion != ((void*)0)' failed.
+^C^C^C^C^C
+
+Connection closed.
+
+Disconnected from remote host(Login) at 21:28:34.
+
+Type `help' to learn how to use Xshell prompt.
+[c:\~]$ 
+
+Connecting to 202.120.32.239:22...
+Connection established.
+To escape to local shell, press 'Ctrl+Alt+]'.
+
+Last login: Tue May 16 20:18:01 2017 from 202.120.3.248
+[chenxx@minsky ~]$ cd UM_GTCP/src/mpi/
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/D.txt 100 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 205084700, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+Cuda error in file 'gpu_setup.cu' in line 106 : out of memory.
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/D.txt 80 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 164067760, mi_total: 164067760, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+Cuda error in file 'gpu_setup.cu' in line 209 : out of memory.
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/D.txt 1 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 2050847, mi_total: 2050847, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 53 0 1.000000 0.000000 2051567 77406238
+^C
+[chenxx@minsky mpi]$ ./bench_gtc-minsky-nvcc input/D.txt 50 1
+Finished reading input file.
+Using npartdom 1, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=1 number of particle copies=1
+mi: 102542350, mi_total: 102542350, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 53 0 1.000000 0.000000 2051567 77406238
+100 time steps
+Total time:   1605.612029 s
+Charge        187.518261 s (11.6789)
+Push          582.681064 s (36.2903)
+Shift_t       537.411119 s (33.4708)
+Shift_r        0.000115 s (0.0000)
+Sorting        0.000092 s (0.0000)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       225.929137 s (14.0712)
+Field         30.670979 s (1.9102)
+Smooth        41.400428 s (2.5785)
+Restart        0.000012 s (0.0000)
+Moments        0.000015 s (0.0000)
+Setup         372.191415 s
+Poisson Init  12.435639 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 0.000000 charge_t_comm3= 0.003432
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 0.000000 charge_t_comm3_g= 0.003432
+grid_t_comm1= 5.279119 grid_t_comm2= 0.000372
+grid_t_comm1_g= 5.279119 grid_t_comm2_g= 0.000372
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(­
+GPU PCIe time summary:
+Charge			 2.238290 s
+Push			 4.858318 s
+Shift			 0.000000 s
+
+Execution time summary on GPU device:
+Charge			170.254855 s
+Push			577.804379 s
+Shift			 0.000000 s
+Particle sort	54.927010 s
+Particle bin	482.464880 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+

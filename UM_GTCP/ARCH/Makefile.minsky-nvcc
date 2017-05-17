@@ -1,0 +1,31 @@
+# Define the following to 1 to enable build
+BENCH_GTC_MPI = 1
+BENCH_CHARGEI_PTHREADS = 0
+BENCH_PUSHI_PTHREADS = 0
+BENCH_SERIAL = 0
+CUDA_HOME=/usr/local/cuda-8.0
+NVCC_HOME=$(CUDA_HOME)
+MPI_HOME= /lustre/spack/tools/linux-centos7-ppc64le/xl_r-13.1/mvapich2-2.2-voy7i4z34exqny23uive7f66o7mawxur
+
+CC = xlc
+MPICC = mpicc
+NVCC = nvcc
+
+NVCC_FLAGS = -gencode=arch=compute_60,code=\"sm_60,compute_60\" -gencode=arch=compute_60,code=\"sm_60,compute_60\" -m64 -Xptxas -dlcm=cg --compiler-options  -fno-strict-aliasing --ptxas-options=-v -I. -DUNIX -DGPU_ACCEL=1 -DUSE_MPI=1 -I./ -I$(NVCC_HOME)/include -I$(MPI_HOME)/include
+#-I/opt/sw/xk6/ompi/1.7.1/sles11.1_intel12.1.3.293/include
+#-Xptxas -dlcm=cg disable L1 caching
+
+NVCC_LINK_FLAGS = -fPIC -L$(NVCC_HOME)/lib64 -lcudart -lstdc++
+
+CFLAGS = -qstrict -DUSE_MPI=1 -DGPU_ACCEL=1 -std=c99 -h gnu -I$(NVCC_HOME)/include -I$(MPI_HOME)/include
+CFLAGSOMP = -openmp
+COPTFLAGS = -O3
+CDEPFLAGS = -MD
+CLDFLAGS = $(NVCC_LINK_FLAGS)
+MPIDIR =
+#CFLAGS  +=  -I$(CUDA_HOME)/include/
+
+EXEEXT = -minsky-nvcc
+AR = ar
+ARCRFLAGS = cr
+RANLIB = ranlib
