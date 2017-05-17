@@ -1,0 +1,18 @@
+# Define the following to 1 to enable build
+BENCH_GTC_MPI = 1
+BENCH_CHARGEI_PTHREADS = 0
+BENCH_PUSHI_PTHREADS = 0
+BENCH_SERIAL = 0
+
+CC = gcc
+MPICC = gcc
+CFLAGS = -g -Wall -Wextra -pedantic -std=gnu99 -fopenmp -DUSE_MPI=0
+COPTFLAGS = -O3
+CDEPFLAGS = -MD 
+CLDFLAGS = -lm -static
+
+EXEEXT = _serial_gcc
+
+AR = ar
+ARCRFLAGS = cr
+RANLIB = ranlib

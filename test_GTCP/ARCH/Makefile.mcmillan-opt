@@ -1,0 +1,32 @@
+# Define the following to 1 to enable build
+BENCH_GTC_MPI = 1
+BENCH_CHARGEI_PTHREADS = 0
+BENCH_PUSHI_PTHREADS = 0
+BENCH_SERIAL = 0
+SDK_HOME = /home/beiwang/NVIDIA_GPU_Computing_SDK
+CUDA_HOME = /usr/local/cudatoolkit/5.0.35
+NVCC_HOME = $(CUDA_HOME)
+
+CC = mpicc
+MPICC = mpicc
+NVCC = nvcc
+NVCC_FLAGS = -gencode=arch=compute_20,code=\"sm_20,compute_20\" -gencode=arch=compute_20,code=\"sm_20,compute_20\" -m64 --compiler-options  -fno-strict-aliasing --ptxas-options=-v -Xptxas -dlcm=cg -I$(NVCC_HOME)/include   -I. -DUNIX -O3 -DGPU_ACCEL=1 -I./  -I$(SDK_HOME)/C/common/inc -I$(SDK_HOME)/shared/inc
+# --ptxas-options=0 print total local memory (lmem) used per kernel
+# -Xptxas -dlcm=cg #disable L1 cache
+# -maxregcount 128
+#--ptxas-options=-v
+# -keep -maxregcount
+
+CFLAGS = -std=c99 -m64 -Wall -wd981 -wd1572 -DUSE_MPI=1
+CFLAGSOMP = -openmp
+COPTFLAGS = -O3 -mcmodel=large  
+CDEPFLAGS = -MD 
+CLDFLAGS = -limf $(NVCC_LINK_FLAGS) -openmp
+MPIDIR = 
+CFLAGS  += -I$(CUDA_HOME)/include/
+
+EXEEXT = _mcmillan_intel_opt
+
+AR = ar
+ARCRFLAGS = cr
+RANLIB = ranlib

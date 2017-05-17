@@ -1,0 +1,1586 @@
+input file: D.txt
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 5.065751 s
+Push			 1.430576 s
+Shift			 0.759153 s
+
+Execution time summary on GPU device:
+Charge			42.436181 s
+Push			40.192555 s
+Shift			 0.033172 s
+Particle sort	 8.512479 s
+Particle bin	21.601417 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   216.916169 s
+Charge        52.419738 s (24.1659)
+Push          41.871619 s (19.3031)
+Shift_t       15.006124 s (6.9179)
+Shift_r       16.735361 s (7.7151)
+Sorting        0.016542 s (0.0076)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       61.712929 s (28.4501)
+Field         12.759197 s (5.8821)
+Smooth        16.173084 s (7.4559)
+Restart        0.009156 s (0.0042)
+Moments        0.008994 s (0.0041)
+Setup         140.863619 s
+Poisson Init   4.354006 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 6.148546 charge_t_comm3= 0.252023
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 6.148546 charge_t_comm3_g= 0.720909
+grid_t_comm1= 1.539713 grid_t_comm2= 6.960908
+grid_t_comm1_g= 1.921916 grid_t_comm2_g=15.468866
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 4.100713 s
+Push			 0.931538 s
+Shift			 0.497827 s
+
+Execution time summary on GPU device:
+Charge			38.815803 s
+Push			35.454819 s
+Shift			 0.011515 s
+Particle sort	 8.521099 s
+Particle bin	21.462138 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 3.147727 s
+Push			 2.085185 s
+Shift			 0.619272 s
+
+Execution time summary on GPU device:
+Charge			42.444416 s
+Push			40.114827 s
+Shift			 0.015395 s
+Particle sort	 8.521328 s
+Particle bin	21.602598 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   253.943597 s
+Charge        53.106851 s (20.9129)
+Push          42.629005 s (16.7868)
+Shift_t       15.057130 s (5.9293)
+Shift_r       17.076403 s (6.7245)
+Sorting        0.016207 s (0.0064)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       87.579110 s (34.4876)
+Field         18.849344 s (7.4227)
+Smooth        19.413794 s (7.6449)
+Restart        0.008809 s (0.0035)
+Moments        0.008679 s (0.0034)
+Setup         157.705880 s
+Poisson Init   3.669722 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 4.442527 charge_t_comm3= 1.105386
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 4.442527 charge_t_comm3_g= 1.105386
+grid_t_comm1= 2.177330 grid_t_comm2=17.181986
+grid_t_comm1_g= 2.177330 grid_t_comm2_g=19.296898
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 5.356648 s
+Push			 1.943267 s
+Shift			 0.619250 s
+
+Execution time summary on GPU device:
+Charge			38.841926 s
+Push			35.347035 s
+Shift			 0.010279 s
+Particle sort	 8.512697 s
+Particle bin	21.494283 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 3.774427 s
+Push			 2.409418 s
+Shift			 0.735139 s
+
+Execution time summary on GPU device:
+Charge			42.445761 s
+Push			40.171579 s
+Shift			 0.011877 s
+Particle sort	 8.621861 s
+Particle bin	21.428529 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   260.478983 s
+Charge        51.415932 s (19.7390)
+Push          43.126444 s (16.5566)
+Shift_t       15.076486 s (5.7880)
+Shift_r       16.611991 s (6.3775)
+Sorting        0.013866 s (0.0053)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       88.122317 s (33.8309)
+Field         22.593614 s (8.6739)
+Smooth        23.271717 s (8.9342)
+Restart        0.007552 s (0.0029)
+Moments        0.008329 s (0.0032)
+Setup         161.918076 s
+Poisson Init   3.567848 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.648934 charge_t_comm3= 0.704009
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.648934 charge_t_comm3_g= 0.704009
+grid_t_comm1= 2.701021 grid_t_comm2=10.619813
+grid_t_comm1_g= 2.705893 grid_t_comm2_g=27.846604
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 5.454319 s
+Push			 2.396791 s
+Shift			 0.685719 s
+
+Execution time summary on GPU device:
+Charge			38.876005 s
+Push			35.425492 s
+Shift			 0.010551 s
+Particle sort	 8.634661 s
+Particle bin	21.496736 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 4.823281 s
+Push			 1.506431 s
+Shift			 0.668798 s
+
+Execution time summary on GPU device:
+Charge			42.397975 s
+Push			40.172193 s
+Shift			 0.049796 s
+Particle sort	 8.457186 s
+Particle bin	21.422062 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   229.870299 s
+Charge        52.596974 s (22.8812)
+Push          42.044352 s (18.2905)
+Shift_t       15.033019 s (6.5398)
+Shift_r       16.861394 s (7.3352)
+Sorting        0.019656 s (0.0086)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       73.042276 s (31.7754)
+Field         12.893962 s (5.6092)
+Smooth        17.127302 s (7.4509)
+Restart        0.009901 s (0.0043)
+Moments        0.009866 s (0.0043)
+Setup         142.728393 s
+Poisson Init   4.384187 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.079968 charge_t_comm3= 0.546995
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.534210 charge_t_comm3_g= 1.307932
+grid_t_comm1= 1.922132 grid_t_comm2= 4.913224
+grid_t_comm1_g= 2.055420 grid_t_comm2_g=33.016510
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 7.694932 s
+Push			 1.500727 s
+Shift			 0.878272 s
+
+Execution time summary on GPU device:
+Charge			38.863983 s
+Push			35.304895 s
+Shift			 0.009339 s
+Particle sort	 8.670370 s
+Particle bin	21.457063 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+100 time steps
+Total time:   247.117773 s
+Charge        51.754202 s (20.9431)
+Push          42.083756 s (17.0298)
+Shift_t       14.980867 s (6.0622)
+Shift_r       16.692560 s (6.7549)
+Sorting        0.014855 s (0.0060)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       82.597615 s (33.4244)
+Field         19.474370 s (7.8806)
+Smooth        19.325833 s (7.8205)
+Restart        0.007529 s (0.0030)
+Moments        0.007420 s (0.0030)
+Setup         158.040017 s
+Poisson Init   3.526966 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.347477 charge_t_comm3= 0.640063
+(???ge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.345984 charge_t_comm3_g= 0.640063
+grid_t_comm1= 2.527500 grid_t_comm2=12.425514
+grid_t_comm1_g= 2.527500 grid_t_comm2_g=26.383542
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 6.517217 s
+Push			 2.148646 s
+Shift			 0.670802 s
+
+Execution time summary on GPU device:
+Charge			38.881497 s
+Push			35.384063 s
+Shift			 0.012871 s
+Particle sort	 8.576614 s
+Particle bin	21.505831 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+ ?
+GPU PCIe time summary:
+Charge			 2.164084 s
+Push			 1.163529 s
+Shift			 0.317238 s
+
+Execution time summary on GPU device:
+Charge			42.366398 s
+Push			40.184263 s
+Shift			 0.009583 s
+Particle sort	 8.432291 s
+Particle bin	21.453329 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 6.399223 s
+Push			 2.489136 s
+Shift			 0.990333 s
+
+Execution time summary on GPU device:
+Charge			42.462861 s
+Push			40.142353 s
+Shift			 0.017773 s
+Particle sort	 8.690663 s
+Particle bin	21.601073 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   266.048478 s
+Charge        54.068262 s (20.3227)
+Push          42.877039 s (16.1163)
+Shift_t       15.063140 s (5.6618)
+Shift_r       17.081997 s (6.4206)
+Sorting        0.018228 s (0.0069)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       89.237453 s (33.5418)
+Field         22.374041 s (8.4098)
+Smooth        25.096625 s (9.4331)
+Restart        0.009496 s (0.0036)
+Moments        0.009471 s (0.0036)
+Setup         135.550671 s
+Poisson Init   3.732944 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.618283 charge_t_comm3= 0.660066
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.618283 charge_t_comm3_g= 0.660066
+grid_t_comm1= 3.659569 grid_t_comm2= 9.711586
+grid_t_comm1_g= 3.659569 grid_t_comm2_g=14.636346
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 8.013485 s
+Push			 2.357509 s
+Shift			 0.938083 s
+
+Execution time summary on GPU device:
+Charge			38.868385 s
+Push			35.374436 s
+Shift			 0.009367 s
+Particle sort	 8.684282 s
+Particle bin	21.477366 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 4.442098 s
+Push			 1.877321 s
+Shift			 0.741414 s
+
+Execution time summary on GPU device:
+Charge			42.461562 s
+Push			40.188140 s
+Shift			 0.020482 s
+Particle sort	 8.519264 s
+Particle bin	21.605512 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   242.279182 s
+Charge        52.090695 s (21.5003)
+Push          42.346947 s (17.4786)
+Shift_t       15.005801 s (6.1936)
+Shift_r       16.791882 s (6.9308)
+Sorting        0.016043 s (0.0066)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       82.321879 s (33.9781)
+Field         16.106381 s (6.6479)
+Smooth        17.377531 s (7.1725)
+Restart        0.008846 s (0.0037)
+Moments        0.008665 s (0.0036)
+Setup         153.915453 s
+Poisson Init   3.494567 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 5.544293 charge_t_comm3= 0.790560
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 5.544293 charge_t_comm3_g= 0.790560
+grid_t_comm1= 1.581097 grid_t_comm2=18.078222
+grid_t_comm1_g= 1.943515 grid_t_comm2_g=18.078222
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 3.701368 s
+Push			 1.567815 s
+Shift			 0.473063 s
+
+Execution time summary on GPU device:
+Charge			38.818363 s
+Push			35.371755 s
+Shift			 0.010190 s
+Particle sort	 8.525806 s
+Particle bin	21.467880 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 7.976169 s
+Push			 2.396278 s
+Shift			 1.018283 s
+
+Execution time summary on GPU device:
+Charge			42.443763 s
+Push			40.158216 s
+Shift			 0.010826 s
+Particle sort	 8.675955 s
+Particle bin	21.406740 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   269.402102 s
+Charge        56.100081 s (20.8239)
+Push          42.824063 s (15.8960)
+Shift_t       15.014863 s (5.5734)
+Shift_r       17.120869 s (6.3551)
+Sorting        0.017056 s (0.0063)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       90.741834 s (33.6827)
+Field         22.155342 s (8.2239)
+Smooth        25.208349 s (9.3571)
+Restart        0.009029 s (0.0034)
+Moments        0.008866 s (0.0033)
+Setup         157.152927 s
+Poisson Init   3.735102 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 6.361726 charge_t_comm3= 1.140924
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 6.361726 charge_t_comm3_g= 1.140924
+grid_t_comm1= 3.164484 grid_t_comm2=22.197631
+grid_t_comm1_g= 3.275337 grid_t_comm2_g=22.197631
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 6.208330 s
+Push			 2.073709 s
+Shift			 0.679863 s
+
+Execution time summary on GPU device:
+Charge			38.845443 s
+Push			35.342842 s
+Shift			 0.013094 s
+Particle sort	 8.590913 s
+Particle bin	21.484825 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 4.114555 s
+Push			 1.942376 s
+Shift			 0.703867 s
+
+Execution time summary on GPU device:
+Charge			42.433989 s
+Push			40.166092 s
+Shift			 0.038479 s
+Particle sort	 8.513505 s
+Particle bin	21.604780 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   247.354469 s
+Charge        51.941895 s (20.9990)
+Push          42.364593 s (17.1271)
+Shift_t       15.035579 s (6.0786)
+Shift_r       16.806195 s (6.7944)
+Sorting        0.017770 s (0.0072)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       84.218654 s (34.0478)
+Field         18.506706 s (7.4819)
+Smooth        18.230831 s (7.3703)
+Restart        0.009367 s (0.0038)
+Moments        0.009366 s (0.0038)
+Setup         157.490758 s
+Poisson Init   4.437895 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 3.403433 charge_t_comm3= 0.682838
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.403433 charge_t_comm3_g= 0.682838
+grid_t_comm1= 2.087194 grid_t_comm2=14.663188
+grid_t_comm1_g= 2.257806 grid_t_comm2_g=18.755162
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(?
+GPU PCIe time summary:
+Charge			 5.501747 s
+Push			 1.556492 s
+Shift			 0.682328 s
+
+Execution time summary on GPU device:
+Charge			38.850418 s
+Push			35.391667 s
+Shift			 0.009348 s
+Particle sort	 8.634536 s
+Particle bin	21.468797 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ ?
+GPU PCIe time summary:
+Charge			 4.308078 s
+Push			 2.167783 s
+Shift			 0.721527 s
+
+Execution time summary on GPU device:
+Charge			42.457374 s
+Push			40.159714 s
+Shift			 0.011327 s
+Particle sort	 8.609203 s
+Particle bin	21.596531 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+(???time steps
+Total time:   258.629888 s
+Charge        51.846043 s (20.0464)
+Push          42.640170 s (16.4869)
+Shift_t       15.017198 s (5.8064)
+Shift_r       16.796010 s (6.4942)
+Sorting        0.016100 s (0.0062)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       87.193932 s (33.7138)
+Field         22.119436 s (8.5525)
+Smooth        22.791236 s (8.8123)
+Restart        0.008078 s (0.0031)
+Moments        0.007852 s (0.0030)
+Setup         148.625349 s
+Poisson Init   3.383180 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 3.445169 charge_t_comm3= 0.558437
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.445169 charge_t_comm3_g= 0.558437
+grid_t_comm1= 2.796415 grid_t_comm2=13.446957
+grid_t_comm1_g= 2.966604 grid_t_comm2_g=14.888077
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 5.331640 s
+Push			 2.048005 s
+Shift			 0.623475 s
+
+Execution time summary on GPU device:
+Charge			38.863820 s
+Push			35.377880 s
+Shift			 0.009120 s
+Particle sort	 8.580742 s
+Particle bin	21.470933 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+
+
+
+input file: D.txt
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 4.886763 s
+Push			 2.132741 s
+Shift			 0.748323 s
+
+Execution time summary on GPU device:
+Charge			42.428016 s
+Push			40.157064 s
+Shift			 0.033253 s
+Particle sort	 8.537029 s
+Particle bin	21.445603 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   253.559500 s
+Charge        52.545113 s (20.7230)
+Push          42.517213 s (16.7681)
+Shift_t       14.933602 s (5.8896)
+Shift_r       16.840217 s (6.6415)
+Sorting        0.016901 s (0.0067)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       85.441131 s (33.6967)
+Field         20.223230 s (7.9757)
+Smooth        20.825444 s (8.2132)
+Restart        0.008842 s (0.0035)
+Moments        0.008801 s (0.0035)
+Setup         152.825287 s
+Poisson Init   4.391320 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.742182 charge_t_comm3= 0.659781
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.742182 charge_t_comm3_g= 0.691265
+grid_t_comm1= 2.825412 grid_t_comm2=13.064346
+grid_t_comm1_g= 2.825412 grid_t_comm2_g=16.316116
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(Â­
+GPU PCIe time summary:
+Charge			 6.538950 s
+Push			 1.919326 s
+Shift			 0.749743 s
+
+Execution time summary on GPU device:
+Charge			38.867795 s
+Push			35.398745 s
+Shift			 0.011736 s
+Particle sort	 8.613232 s
+Particle bin	21.474128 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 4.929557 s
+Push			 2.290631 s
+Shift			 0.783604 s
+
+Execution time summary on GPU device:
+Charge			42.468860 s
+Push			40.226353 s
+Shift			 0.019735 s
+Particle sort	 8.638040 s
+Particle bin	21.588297 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   255.196235 s
+Charge        52.392320 s (20.5302)
+Push          42.883827 s (16.8043)
+Shift_t       15.081151 s (5.9096)
+Shift_r       16.769484 s (6.5712)
+Sorting        0.014673 s (0.0057)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       84.547283 s (33.1303)
+Field         21.340475 s (8.3624)
+Smooth        21.974255 s (8.6107)
+Restart        0.008081 s (0.0032)
+Moments        0.007907 s (0.0031)
+Setup         158.008206 s
+Poisson Init   3.761146 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 3.091621 charge_t_comm3= 0.558571
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.091621 charge_t_comm3_g= 0.558571
+grid_t_comm1= 3.083776 grid_t_comm2=10.830854
+grid_t_comm1_g= 3.098806 grid_t_comm2_g=13.922040
+(Â­í®“í²¨_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 6.289852 s
+Push			 2.269882 s
+Shift			 0.711162 s
+
+Execution time summary on GPU device:
+Charge			38.872022 s
+Push			35.393381 s
+Shift			 0.012465 s
+Particle sort	 8.590684 s
+Particle bin	21.479139 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­í¥¢í¾»100 time steps
+Total time:   218.843742 s
+Charge        51.567944 s (23.5638)
+Push          41.869396 s (19.1321)
+Shift_t       14.982148 s (6.8460)
+Shift_r       16.725935 s (7.6429)
+Sorting        0.017997 s (0.0082)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       65.345534 s (29.8594)
+Field         12.259181 s (5.6018)
+Smooth        15.850721 s (7.2429)
+Restart        0.008713 s (0.0040)
+Moments        0.008472 s (0.0039)
+Setup         137.734150 s
+Poisson Init   4.428190 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 0.928355 charge_t_comm3= 0.502793
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.025585 charge_t_comm3_g= 0.965339
+grid_t_comm1= 1.904894 grid_t_comm2= 3.415434
+grid_t_comm1_g= 1.904894 grid_t_comm2_g=26.570249
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 8.092878 s
+Push			 1.764066 s
+Shift			 0.910131 s
+
+Execution time summary on GPU device:
+Charge			38.872885 s
+Push			35.414927 s
+Shift			 0.008810 s
+Particle sort	 8.665655 s
+Particle bin	21.476210 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+
+GPU PCIe time summary:
+Charge			 3.724074 s
+Push			 1.321756 s
+Shift			 0.698867 s
+
+Execution time summary on GPU device:
+Charge			42.410570 s
+Push			40.175453 s
+Shift			 0.016827 s
+Particle sort	 8.578380 s
+Particle bin	21.360842 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 2.533543 s
+Push			 1.480617 s
+Shift			 0.420740 s
+
+Execution time summary on GPU device:
+Charge			42.379863 s
+Push			40.107481 s
+Shift			 0.013714 s
+Particle sort	 8.498246 s
+Particle bin	21.439317 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   218.257860 s
+Charge        50.728372 s (23.2424)
+Push          42.233825 s (19.3504)
+Shift_t       14.945134 s (6.8475)
+Shift_r       16.613998 s (7.6121)
+Sorting        0.015446 s (0.0071)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       62.492671 s (28.6325)
+Field         15.412037 s (7.0614)
+Smooth        15.619170 s (7.1563)
+Restart        0.008041 s (0.0037)
+Moments        0.007955 s (0.0036)
+Setup         143.497146 s
+Poisson Init   4.390416 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 1.176086 charge_t_comm3= 0.623350
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.713118 charge_t_comm3_g= 0.623350
+grid_t_comm1= 2.041935 grid_t_comm2=12.522307
+grid_t_comm1_g= 2.041935 grid_t_comm2_g=14.260654
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(Â­
+GPU PCIe time summary:
+Charge			 7.313361 s
+Push			 2.079031 s
+Shift			 0.748161 s
+
+Execution time summary on GPU device:
+Charge			38.867787 s
+Push			35.326109 s
+Shift			 0.007106 s
+Particle sort	 8.561569 s
+Particle bin	21.507240 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 5.569247 s
+Push			 2.610176 s
+Shift			 0.937368 s
+
+Execution time summary on GPU device:
+Charge			42.478348 s
+Push			40.186315 s
+Shift			 0.009760 s
+Particle sort	 8.666390 s
+Particle bin	21.473670 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   265.966264 s
+Charge        53.377543 s (20.0693)
+Push          43.097891 s (16.2043)
+Shift_t       15.018492 s (5.6468)
+Shift_r       16.896170 s (6.3527)
+Sorting        0.015097 s (0.0057)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       87.849126 s (33.0302)
+Field         23.807239 s (8.9512)
+Smooth        25.698941 s (9.6625)
+Restart        0.007893 s (0.0030)
+Moments        0.007747 s (0.0029)
+Setup         158.047990 s
+Poisson Init   3.720329 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 3.738339 charge_t_comm3= 0.839882
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.738339 charge_t_comm3_g= 0.839882
+grid_t_comm1= 3.565226 grid_t_comm2=17.374693
+grid_t_comm1_g= 3.565226 grid_t_comm2_g=17.374693
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(Â­
+GPU PCIe time summary:
+Charge			 6.232480 s
+Push			 2.351395 s
+Shift			 0.730545 s
+
+Execution time summary on GPU device:
+Charge			38.869330 s
+Push			35.405609 s
+Shift			 0.009595 s
+Particle sort	 8.595852 s
+Particle bin	21.490399 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 2.828447 s
+Push			 1.451153 s
+Shift			 0.432065 s
+
+Execution time summary on GPU device:
+Charge			42.401443 s
+Push			40.220516 s
+Shift			 0.047619 s
+Particle sort	 8.376833 s
+Particle bin	21.585746 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   238.455919 s
+Charge        55.007143 s (23.0681)
+Push          42.243250 s (17.7153)
+Shift_t       14.996867 s (6.2892)
+Shift_r       17.400334 s (7.2971)
+Sorting        0.021397 s (0.0090)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       75.500654 s (31.6623)
+Field         13.989600 s (5.8667)
+Smooth        19.020137 s (7.9764)
+Restart        0.011091 s (0.0047)
+Moments        0.010973 s (0.0046)
+Setup         162.797392 s
+Poisson Init   4.332056 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 1.199433 charge_t_comm3= 0.495229
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 5.601454 charge_t_comm3_g= 1.871498
+grid_t_comm1= 2.245070 grid_t_comm2= 2.984931
+grid_t_comm1_g= 2.245070 grid_t_comm2_g=45.831504
+(Â­í®“í²¨_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			10.578807 s
+Push			 1.785046 s
+Shift			 1.240068 s
+
+Execution time summary on GPU device:
+Charge			38.919034 s
+Push			35.301178 s
+Shift			 0.009754 s
+Particle sort	 8.740478 s
+Particle bin	21.455962 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 5.424745 s
+Push			 1.835262 s
+Shift			 0.829641 s
+
+Execution time summary on GPU device:
+Charge			42.458289 s
+Push			40.150004 s
+Shift			 0.009104 s
+Particle sort	 8.654482 s
+Particle bin	21.524595 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   246.192892 s
+Charge        52.215129 s (21.2090)
+Push          42.724693 s (17.3542)
+Shift_t       14.971971 s (6.0814)
+Shift_r       16.669176 s (6.7708)
+Sorting        0.015331 s (0.0062)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       82.973673 s (33.7027)
+Field         18.237844 s (7.4079)
+Smooth        18.175804 s (7.3827)
+Restart        0.008349 s (0.0034)
+Moments        0.008124 s (0.0033)
+Setup         157.554644 s
+Poisson Init   4.290869 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.358706 charge_t_comm3= 0.831829
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 3.819986 charge_t_comm3_g= 0.831829
+grid_t_comm1= 2.270398 grid_t_comm2= 6.814997
+grid_t_comm1_g= 2.298006 grid_t_comm2_g=29.342028
+(Â­í®“í²¨_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 6.752328 s
+Push			 1.859241 s
+Shift			 0.770188 s
+
+Execution time summary on GPU device:
+Charge			38.875861 s
+Push			35.423957 s
+Shift			 0.011300 s
+Particle sort	 8.608303 s
+Particle bin	21.489233 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 5.510632 s
+Push			 1.708135 s
+Shift			 0.807736 s
+
+Execution time summary on GPU device:
+Charge			42.434764 s
+Push			40.148573 s
+Shift			 0.012955 s
+Particle sort	 8.594491 s
+Particle bin	21.412055 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   219.199185 s
+Charge        52.964385 s (24.1627)
+Push          42.135110 s (19.2223)
+Shift_t       14.920399 s (6.8068)
+Shift_r       16.733616 s (7.6340)
+Sorting        0.017052 s (0.0078)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       62.445426 s (28.4880)
+Field         13.368963 s (6.0990)
+Smooth        16.386680 s (7.4757)
+Restart        0.008703 s (0.0040)
+Moments        0.008536 s (0.0039)
+Setup         146.193158 s
+Poisson Init   3.412881 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 8.566709 charge_t_comm3= 0.239758
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 8.566709 charge_t_comm3_g= 0.508756
+grid_t_comm1= 1.356375 grid_t_comm2=11.323220
+grid_t_comm1_g= 2.074393 grid_t_comm2_g=12.352952
+push_t_comp= 0.000000
+push_t_comp_g= 0.000000
+(Â­
+GPU PCIe time summary:
+Charge			 2.437537 s
+Push			 0.852331 s
+Shift			 0.290153 s
+
+Execution time summary on GPU device:
+Charge			38.785314 s
+Push			35.382731 s
+Shift			 0.021896 s
+Particle sort	 8.430011 s
+Particle bin	21.453393 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 4.574139 s
+Push			 1.905511 s
+Shift			 0.691678 s
+
+Execution time summary on GPU device:
+Charge			42.404947 s
+Push			40.166591 s
+Shift			 0.044289 s
+Particle sort	 8.525741 s
+Particle bin	21.410976 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   248.656121 s
+Charge        53.190137 s (21.3910)
+Push          42.318966 s (17.0191)
+Shift_t       14.992345 s (6.0293)
+Shift_r       16.984792 s (6.8306)
+Sorting        0.019225 s (0.0077)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       83.757586 s (33.6841)
+Field         18.414690 s (7.4057)
+Smooth        18.731891 s (7.5333)
+Restart        0.010103 s (0.0041)
+Moments        0.009861 s (0.0040)
+Setup         157.867996 s
+Poisson Init   4.269308 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 1.876397 charge_t_comm3= 0.704524
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.403754 charge_t_comm3_g= 0.966454
+grid_t_comm1= 2.570514 grid_t_comm2= 8.121871
+grid_t_comm1_g= 2.570514 grid_t_comm2_g=24.832105
+(Â­í®“í²¨_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 7.997915 s
+Push			 1.784517 s
+Shift			 0.899229 s
+
+Execution time summary on GPU device:
+Charge			38.871640 s
+Push			35.325944 s
+Shift			 0.009238 s
+Particle sort	 8.667683 s
+Particle bin	21.466106 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+Finished reading input file.
+Using npartdom 4, ntoroidal 1, nthreads 1
+NOT use customized MPI mapping on BGQ
+number of radial parition=4 number of particle copies=1
+mi: 51271175, mi_total: 205084700, mgrid: 2051567, mzetamax: 1
+Using n_rad_buf=7 buffer cells: gyroradius/deltar=0.900307
+Binning and removing holes every 1 steps
+multiProcessorCount=56
+PE 0: Running on cuda device 0, total devices 4, Warpsize: 32, Min block count: 128
+GPU Run Configuration
+========================
+Prefer L1: no
+Use of PTX intrinsics: yes
+Particle binning: yes (period 10)
+On the fly aux computation: yes
+Gyro local compute: no
+Use cooperative threading for charge deposition: yes
+Use four-point algorithm: no
+Use synergestic_sort_shift: yes
+=======================
+poisson solver: 45 0 1.000000 0.000000 533853 20134847
+ Â­
+GPU PCIe time summary:
+Charge			 4.161800 s
+Push			 2.476373 s
+Shift			 0.744171 s
+
+Execution time summary on GPU device:
+Charge			42.443954 s
+Push			40.170268 s
+Shift			 0.011986 s
+Particle sort	 8.596188 s
+Particle bin	21.417907 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+100 time steps
+Total time:   259.462473 s
+Charge        51.599118 s (19.8869)
+Push          42.976137 s (16.5635)
+Shift_t       15.020672 s (5.7892)
+Shift_r       16.647802 s (6.4163)
+Sorting        0.014766 s (0.0057)
+Collision      0.000000 s (0.0000)
+Remapping      0.000000 s (0.0000)
+Poisson       86.582020 s (33.3698)
+Field         22.764691 s (8.7738)
+Smooth        23.661863 s (9.1196)
+Restart        0.007820 s (0.0030)
+Moments        0.007774 s (0.0030)
+Setup         157.508744 s
+Poisson Init   3.497353 s
+shift_t_comp= 0.000000 shift_t_comm1= 0.000000 shift_t_comm2= 0.000000
+shift_t_comp_g= 0.000000 shift_t_comm1_g= 0.000000 shift_t_comm2_g= 0.000000
+charge_t_comp= 0.000000 charge_t_comp_t1= 0.000000 charge_t_comm= 2.250393 charge_t_comm3= 0.783569
+charge_t_comp_g= 0.000000 charge_t_comp_t1_g= 0.000000 charge_t_comm_g= 2.250393 charge_t_comm3_g= 0.783569
+grid_t_comm1= 3.280144 grid_t_comm2=12.475129
+grid_t_comm1_g= 3.280144 grid_t_comm2_g=19.179096
+(Â­í®“í²¨_t_comp= 0.000000
+push_t_comp_g= 0.000000
+
+GPU PCIe time summary:
+Charge			 6.003939 s
+Push			 2.489756 s
+Shift			 0.699175 s
+
+Execution time summary on GPU device:
+Charge			38.872024 s
+Push			35.390755 s
+Shift			 0.010801 s
+Particle sort	 8.628516 s
+Particle bin	21.490031 s
+charge reset    0.000000 s
+charge initialization  0.000000 s
+charge interpolation   0.000000 s
+push point interpolation  0.000000 s
+push gyro interpolation   0.000000 s
+
