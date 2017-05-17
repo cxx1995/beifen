@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chenxx/parboil/benchmarks/bfs/src/base/main.cc
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+math.h
+-
+parboil.h
+-
+deque
+-
+iostream
+-
+

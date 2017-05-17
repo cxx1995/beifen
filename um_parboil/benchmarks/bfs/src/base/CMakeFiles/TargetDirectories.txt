@@ -1,0 +1,3 @@
+/home/chenxx/parboil/benchmarks/bfs/src/base/CMakeFiles/rebuild_cache.dir
+/home/chenxx/parboil/benchmarks/bfs/src/base/CMakeFiles/edit_cache.dir
+/home/chenxx/parboil/benchmarks/bfs/src/base/CMakeFiles/main.dir
